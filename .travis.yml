@@ -3,21 +3,51 @@ language: c
 jobs:
   include:
     - os: linux
+      arch: amd64
       dist: xenial
       compiler: gcc
     - os: linux
+      arch: amd64
       dist: xenial
       compiler: clang
     - os: linux
+      arch: amd64
       dist: bionic
       compiler: gcc
     - os: linux
+      arch: amd64
       dist: bionic
       compiler: clang
     - os: linux
+      arch: amd64
       dist: focal
       compiler: gcc
     - os: linux
+      arch: amd64
+      dist: focal
+      compiler: clang
+    - os: linux
+      arch: ppc64le
+      dist: xenial
+      compiler: gcc
+    - os: linux
+      arch: ppc64le
+      dist: xenial
+      compiler: clang
+    - os: linux
+      arch: ppc64le
+      dist: bionic
+      compiler: gcc
+    - os: linux
+      arch: ppc64le
+      dist: bionic
+      compiler: clang
+    - os: linux
+      arch: ppc64le
+      dist: focal
+      compiler: gcc
+    - os: linux
+      arch: ppc64le
       dist: focal
       compiler: clang
 
