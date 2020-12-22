@@ -53,6 +53,8 @@ jobs:
 
 sudo: false
 
+before_install:
+   - if [ "$TRAVIS_ARCH" = "ppc64le" ]; then sudo apt update -y; fi
 addons:
   apt:
     packages:
